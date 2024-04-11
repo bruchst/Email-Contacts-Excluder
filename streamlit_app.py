@@ -18,8 +18,8 @@ def main():
 
     if uploaded_file1 and uploaded_file2:
         # Načtení CSV souborů
-        list1 = pd.read_csv(uploaded_file1)
-        list2 = pd.read_csv(uploaded_file2)
+        list1 = pd.read_csv(uploaded_file1, delimiter=';')
+        list2 = pd.read_csv(uploaded_file2, delimiter=';')
         
         # Kontrola, zda oba soubory obsahují sloupec 'Email'
         if 'Email' not in list1.columns or 'Email' not in list2.columns:
