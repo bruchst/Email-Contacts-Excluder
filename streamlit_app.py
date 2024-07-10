@@ -10,7 +10,7 @@ def clean_emails(df1, df2):
 
 def main():
     st.title("✂️ Email Contacts Excluder")
-    st.write("Both files should have a column in a format 'Email', otherwise it will not work.")
+    st.write("Both files should have a column in a format 'Email' as the first column, otherwise it will not work.")
 
     # Nahrání souborů uživatelem
     uploaded_file1 = st.file_uploader("Nahrajte první CSV soubor s kontakty:", type="csv")
